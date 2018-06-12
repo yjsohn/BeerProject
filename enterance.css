@@ -1,0 +1,15 @@
+@font-face {
+  font-family: mangofont;
+  src: url(mango.ttf);
+}
+
+body{
+  background-image:url("Background.jpg");
+  background-size : 95%;
+}
+#gui{position:absolute; top: 65%; left:3%; margin-right: 40px;}
+#kozel{position:absolute; top: 60%; left: 18%; margin-left: 10px; margin-right: 40px;}
+#hoeg{position:absolute; top:65%; left: 33%; margin-left: 10px; margin-right: 40px;}
+#blanc{position:absolute; top: 63%; left: 50%; margin-left: 10px; margin-right: 40px;}
+#hein{position:absolute; top: 65%; left: 65%; margin-left: 10px; margin-right: 40px;}
+#corona{position:absolute; top: 65%; left: 83%; margin-right: 70px;}
