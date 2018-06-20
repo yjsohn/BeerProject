@@ -1,9 +1,30 @@
 <html>
 <head><script language = "javascript">
-  var colour = "#193657"
-  function changeColor(num){
-    if(num == 0) background = "white"
-    else if (num == 1) background = "#193657"
+  function changeColor(obj, num){
+    if(num == 1){
+      fir.style.color = "#563a0d";
+      sec.style.color = "white";
+      trd.style.color = "white";
+      lst.style.color = "white";
+    }
+    else if(num == 2){
+      fir.style.color = "white";
+      sec.style.color = "#563a0d";
+      trd.style.color = "white";
+      lst.style.color = "white";
+    }
+    else if(num == 3){
+      fir.style.color = "white";
+      sec.style.color = "white";
+      trd.style.color = "#563a0d";
+      lst.style.color = "white";
+    }
+    else{
+      fir.style.color = "white";
+      sec.style.color = "white";
+      trd.style.color = "white";
+      lst.style.color = "#563a0d";
+    }
   }
   </script>
 <style type = 'text/css'>
@@ -13,14 +34,19 @@
   div.second{top: 13pt; float: left; left: 25%; width: 25%; height: 100%; padding-top: 15px; background: #D2B88E; position: absolute}
   div.third{top: 13pt; float: left; left: 50%; width: 25%; height: 100%; padding-top: 15px; background: #D2B88E; position: absolute}
   div.last{top: 13pt; float: left; left: 75%; width: 27%; height: 100%; padding-top: 15px; background: #D2B88E; position: absolute}
-  a{color: colour; text-decoration: none; font-size: 135%; font-family: arial black; font-weight: bold;}
-  a {color: white;}
+
+  a{text-decoration: none; font-size: 160%; font-family: arial black; font-weight: bold;}
+  #fir{color: #563a0d;}
+  #sec{color: white;}
+  #trd{color: white;}
+  #lst{color: white;}
+
 </style>
 </head>
 <body>
-  <center><div class = first onclick = "changeColor(1)"><a href  = 'AboutKozel.html' target = 'skin' alink = 'gray' vlink = 'black' onclick = "changeColor('False')">About Company</a></div></center>
-  <div class = second onclick = "changeColor('True')"><center><a href  = 'KozelBeer.html' target = 'skin' alink = 'gray' vlink = 'black' onclick = "changeColor('False')">Beer</a></center></div>
-  <div class = third onclick = "changeColor('True')"><center><a href  = 'KozelBr.html' target = 'skin' alink = 'gray' vlink = 'black' onclick = "changeColor('False')">Brewing</a></center></div>
-  <div class = last onclick = "changeColor('True')"><center><a href  = 'KozelAd.html' target = 'skin' alink = 'gray' vlink = 'black' onclick = "changeColor('False')">Advertise</a></center></div>
+  <center><a href  = 'AboutKozel.html' target = 'show' alink = 'gray' id = "fir"><div class = first onclick = "changeColor(this, 1)">#Kozel</div></a></center>
+  <center><a href  = 'KozelBeer.html' target = 'show' alink = 'gray' vlink = 'black' id = "sec"><div class = second onclick = "changeColor(this, 2)">Beer</div></a></center>
+  <center><a href  = 'KozelBr.html' target = 'show' alink = 'gray' vlink = 'black' id = "trd"><div class = third onclick = "changeColor(this, 3)">Brewing</div></a></center>
+  <center><a href  = 'KozelAd.html' target = 'show' alink = 'gray' vlink = 'black' id = "lst"><div class = last onclick = "changeColor(this, 4)">Advertisement</div></a></center>
 </body>
 </html>
