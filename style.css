@@ -1,4 +1,4 @@
 a{color: white; text-decoration: none;}
 a:active{color: gray; text-decoration: none;}
-h1{text-align: center; line-height: 280%;}
+h1{text-align: center; line-height: 280%; color: white; font-size: 150%;}
 body{overflow: hidden;}
